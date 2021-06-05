@@ -13,8 +13,19 @@ namespace WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Request.QueryString["id"];
-            lblSeleccionado.Text = id;
+            try
+            {
+                int id = int.Parse(Request.QueryString["id"]);
+                List<Articulo> listado = (List<Articulo>)Session["ListaArticulos"];
+                Articulo seleccionado = listado.Find(x => x.Id == id);
+
+            }
+            catch(Exception)
+            {
+                Response.Redirect("Error.aspx");
+            }
+            
+           
         }
     }
 }

@@ -18,9 +18,11 @@ namespace WebApp
             try
             {
                 lista = negocio.Listar();
+                Session.Add("ListaArticulos", lista);
             }
             catch (Exception ex)
             {
+                Session.Add("Error", ex.ToString());
                 Response.Redirect("Error.aspx");
             }
 

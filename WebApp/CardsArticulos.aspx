@@ -9,7 +9,7 @@
             {%>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="<% = item.ImagenUrl %>"" class="card-img-top" alt="...">
+                    <img src="<% = item.ImagenUrl %>"" class="card-img-top" alt="..." style="height: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title"><% = item.Nombre %></h5>
                         <p class="card-text"><% = item.Descripcion %></p>
