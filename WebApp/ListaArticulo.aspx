@@ -4,6 +4,6 @@
 
 
     <asp:GridView ID="dgvArticulos" runat="server"></asp:GridView>
-
+    <asp:Button ID="btnAgregar" Text="Agregar" OnClick="btnAgregar_Click" runat="server" />
    
 </asp:Content>

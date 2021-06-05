@@ -9,25 +9,21 @@ using negocio;
 
 namespace WebApp
 {
-    public partial class ListaArticulo : System.Web.UI.Page
+    public partial class CardsArticulos : System.Web.UI.Page
     {
+        public List<Articulo> lista;
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                dgvArticulos.DataSource = negocio.Listar();
-                dgvArticulos.DataBind();
+                lista = negocio.Listar();
             }
             catch (Exception ex)
             {
                 Response.Redirect("Error.aspx");
             }
-        }
 
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("FormularioArticulo.aspx");
         }
     }
 }

@@ -10,3 +10,9 @@ C:\Users\Diego Ciccarelli\Desktop\utn\Tercer cuatrimestre\Programacion III\Winfo
 C:\Users\Diego Ciccarelli\Desktop\utn\Tercer cuatrimestre\Programacion III\Winform entrega final\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Diego Ciccarelli\Desktop\utn\Tercer cuatrimestre\Programacion III\Winform entrega final\dominio\obj\Debug\dominio.dll
 C:\Users\Diego Ciccarelli\Desktop\utn\Tercer cuatrimestre\Programacion III\Winform entrega final\dominio\obj\Debug\dominio.pdb
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\bin\Debug\dominio.dll
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\bin\Debug\dominio.pdb
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.csprojAssemblyReference.cache
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.dll
+C:\Users\jcamp\Desktop\utn\2 año\Programación\Carritodecompras\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.pdb
