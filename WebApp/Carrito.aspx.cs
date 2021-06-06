@@ -14,7 +14,7 @@ namespace WebApp
         public List<Articulo> carrito;
         protected void Page_Load(object sender, EventArgs e)
         {
-            carrito = (List<Articulo>)Session["listaFavoritos"];
+            carrito = (List<Articulo>)Session["listaCarrito"];
             if (carrito == null)
                 carrito = new List<Articulo>();
 
@@ -32,7 +32,7 @@ namespace WebApp
                 repetidor.DataBind();
             }
 
-            Session.Add("listaFavoritos", carrito);
+            Session.Add("listaCarrito", carrito);
 
 
         }
@@ -40,6 +40,18 @@ namespace WebApp
         protected void Unnamed_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnEliminar2_Click(object sender, EventArgs e)
+        {
+            var argument = ((Button)sender).CommandArgument;
+            List<Articulo> carrito = (List<Articulo>)Session["listaCarrito"];
+            Articulo elim = carrito.Find(x => x.Id.ToString() == argument);
+            carrito.Remove(elim);
+            Session.Add("listaCarrito", carrito);
+            repetidor.DataSource = null;
+            repetidor.DataSource = carrito;
+            repetidor.DataBind();
         }
     }
 }
