@@ -14,7 +14,7 @@
                         <h5 class="card-title"><% = item.Nombre %></h5>
                         <p class="card-text"><% = item.Descripcion %></p>
                         <a href="DetalleArticulo.aspx?id=<% = item.Id %>" class="btn btn-primary">Ver Detalle</a>
-                        <a href="Favoritos.aspx?id=<% = item.Id %>&e=t"><i class="fas fa-heart"></i></a>
+                        <a href="Carrito.aspx?id=<% = item.Id %>"class="btn btn-primary">Agregar Carrito></a>
                         
                     </div>
                 </div>
