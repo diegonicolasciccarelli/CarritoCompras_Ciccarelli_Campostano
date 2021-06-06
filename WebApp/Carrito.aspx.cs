@@ -14,26 +14,27 @@ namespace WebApp
         public List<Articulo> carrito;
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            carrito = (List<Articulo>)Session["listaFavoritos"];
+            if (carrito == null)
+                carrito = new List<Articulo>();
+
+            if (!IsPostBack)
             {
-                carrito = (List<Articulo>)Session["listaCarrito"];
-                if (carrito == null)
-                    carrito = new List<Articulo>();
-
-                List<Articulo> listacarro = (List<Articulo>)Session["ListaArticulos"];
-                carrito.Add(listacarro.Find(x => x.Id.ToString() == Request.QueryString["Id"]));
-
-                Session.Add("listaCarrito", carrito);
-
+                if (Request.QueryString["id"] != null)
+                {
+                    if (carrito.Find(x => x.Id.ToString() == Request.QueryString["id"]) == null)
+                    {
+                        List<Articulo> listadoOriginal = (List<Articulo>)Session["ListaArticulos"];
+                        carrito.Add(listadoOriginal.Find(x => x.Id.ToString() == Request.QueryString["id"]));
+                    }
+                }
+                repetidor.DataSource = carrito;
+                repetidor.DataBind();
             }
-            catch (Exception ex)
-            {
-                Session.Add("Error", ex.ToString());
-                Response.Redirect("Error.aspx");
+
+            Session.Add("listaFavoritos", carrito);
 
 
-            }
-           
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
