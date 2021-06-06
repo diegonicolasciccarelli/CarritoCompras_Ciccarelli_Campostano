@@ -53,5 +53,10 @@ namespace WebApp
             repetidor.DataSource = carrito;
             repetidor.DataBind();
         }
+
+        protected void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

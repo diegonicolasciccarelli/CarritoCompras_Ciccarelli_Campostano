@@ -28,3 +28,9 @@ C:\Users\jcamp\Desktop\utn\2 año\Programación\carritonuevo\CarritoCompras_Cicc
 C:\Users\jcamp\Desktop\utn\2 año\Programación\carritonuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\jcamp\Desktop\utn\2 año\Programación\carritonuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.dll
 C:\Users\jcamp\Desktop\utn\2 año\Programación\carritonuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.pdb
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\bin\Debug\dominio.dll
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\bin\Debug\dominio.pdb
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.csprojAssemblyReference.cache
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.dll
+C:\Users\Diego Ciccarelli\Desktop\Clonado nuevo\CarritoCompras_Ciccarelli_Campostano\dominio\obj\Debug\dominio.pdb
