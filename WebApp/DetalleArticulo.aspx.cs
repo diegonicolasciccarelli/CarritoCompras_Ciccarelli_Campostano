@@ -11,14 +11,17 @@ namespace WebApp
 {
     public partial class DetalleArticulo : System.Web.UI.Page
     {
+        public string CodigoDetalle;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-                int id = int.Parse(Request.QueryString["id"]);
-                List<Articulo> listado = (List<Articulo>)Session["ListaArticulos"];
-                Articulo seleccionado = listado.Find(x => x.Id == id);
-
+                CodigoDetalle = Request.QueryString["CodigoDetalle"];
+                /* int id = int.Parse(Request.QueryString["id"]);
+                 List<Articulo> listado = (List<Articulo>)Session["ListaArticulos"];
+                 Articulo seleccionado = listado.Find(x => x.Id == id);
+                */
             }
             catch(Exception)
             {

@@ -12,7 +12,7 @@ namespace WebApp
     public partial class CardsArticulos : System.Web.UI.Page
     {
         public List<Articulo> lista;
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try

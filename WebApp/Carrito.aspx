@@ -1,0 +1,60 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="WebApp.Carrito" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <h1 class="mt-5 mb-5">Mi carrito</h1>
+
+        </div>
+
+      <table class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>SubTotal</th>
+                    <th>Imagen</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <asp:Repeater runat="server" ID="repetidor" >
+                    <ItemTemplate>
+                        <tr>
+                            <th scope="row"><%#Eval("ItemArt.Codigo")%></th>
+                            <td><%#Eval("ItemArt.Nombre")%></a></td>
+                            <td>
+                                <%#Eval("Cantidad") %>
+                                <a href="Carrito.aspx?id=<%#Eval("ItemArt.Id")%>&c=a" class="btn btn-light btn-sm">+</a>
+                                <a href="Carrito.aspx?id=<%#Eval("ItemArt.Id")%>&c=r" class="btn btn-dark btn-sm">-</a>
+                            </td>
+                            <td>$<%#Eval("ItemArt.Precio")%></td>
+                            <td>
+                                $<%#Eval("Subtotal") %>
+                                
+                            </td>
+                            <td>
+                                <img src="<%#Eval("ItemArt.ImagenUrl")%>"alt="..." style="height: 8rem; width: 8rem;">
+                            </td>
+                            <td><a href="DetalleArticulo.aspx?codigo=<%#Eval("ItemArt.Codigo")%>"class="btn btn-info btn-sm">Info Articulo</a>
+                               
+                            </td>
+                           <td><a href="Carrito.aspx?id=<%#Eval("ItemArt.Id")%>&c=d" class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
+                       </tr>
+                    </ItemTemplate>
+                </asp:Repeater>
+                        
+           </tbody>
+
+          <tfoot>
+              <th></th>
+              <th></th>
+              <th>$<%= total %></th>
+              <th>Total</th>
+          </tfoot>
+        </table>
+    </div>
+</asp:Content>
