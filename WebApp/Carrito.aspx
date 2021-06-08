@@ -1,13 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="WebApp.Carrito" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
-        <div class="row d-flex justify-content-center">
-            <h1 class="mt-5 mb-5">Mi carrito</h1>
-
-        </div>
-
-      <table class="table">
+        
+        <table class="table table-dark table-striped mt-5 ">
             <thead>
+                <tr>
+                   <th style="text-align:right"><h1>Carrito</h1> </th> 
+                </tr>
                 <tr>
                     <th>Código</th>
                     <th>Nombre</th>
@@ -18,6 +17,7 @@
                     <th></th>
                 </tr>
             </thead>
+      
             <tbody>
 
                 <asp:Repeater runat="server" ID="repetidor" >
@@ -52,6 +52,10 @@
           <tfoot>
               <th></th>
               <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              
               <th>$<%= total %></th>
               <th>Total</th>
           </tfoot>

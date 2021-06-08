@@ -1,42 +1,45 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApp._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+                    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="https://www.staffcreativa.pe/blog/wp-content/uploads/carrito-compras-online2.jpg" alt="First slide"
+                              style="width:300px; height:350px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://www.ecestaticos.com/image/clipping/bc3dd22a195f7d980219da1bdb371a32/ventajas-y-trucos-de-la-compra-por-internet.jpg" alt="Second slide"
+                             style="width:300px; height:350px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://cinusual.com/sites/default/files/styles/imagen_interna/public/noticia/que-es-un-carrito-de-compras-online_0.jpg?itok=3pnMrlcI" alt="Third slide"
+                              style="width:300px; height:350px;">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
+  <h1 class="display-4">Bienvenidos al carrito de Compras!</h1>
+  <p class="lead">Proyecto de carrito de compras en la materia de Programacion III en la Universidad Tecnologica Nacional Regional Pacheco</p>
+  <hr class="my-4">
+  <p>Para ingresar a todos los articulos disponibles para realizar la compra, presione el siguiente boton</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="CardsArticulos.aspx" role="button">Ver Articulos</a>
+  </p>
+</div>
 
 </asp:Content>
