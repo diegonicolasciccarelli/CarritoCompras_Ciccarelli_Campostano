@@ -24,7 +24,7 @@
                     <ItemTemplate>
                         <tr>
                             <th scope="row"><%#Eval("ItemArt.Codigo")%></th>
-                            <td><%#Eval("ItemArt.Nombre")%></a></td>
+                            <td><%#Eval("ItemArt.Nombre")%></td>
                             <td>
                                 <%#Eval("Cantidad") %>
                                 <a href="Carrito.aspx?id=<%#Eval("ItemArt.Id")%>&c=a" class="btn btn-light btn-sm">+</a>

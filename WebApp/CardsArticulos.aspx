@@ -9,9 +9,9 @@
                 <div class="card" style="width: 18rem; text-align:center" >
                     <img src="<% = item.ImagenUrl %>"" class="card-img-top" alt="..." style="height: 18rem;">
                     <div class="card-body" style="background-color:silver">
-                        <h5 class="card-title"><% = item.Nombre %></h5>
-                        <p class="card-text">Código: <% = item.Codigo %></p>
-                        <p class="card-text">Descripción: <% = item.Descripcion %></p>
+                        <h5 class="card-title"><% = item.Id %></h5>
+                        <p class="card-text">Código: <% = item.Descripcion %></p>
+                        <p class="card-text">Descripción: <% = item %></p>
                         <p class="card-text">Precio: $ <% = item.Precio %></p>
                         <a href="DetalleArticulo.aspx?id=<% = item.Id %>" class="btn btn-primary">Ver Detalle</a>
                         <a href="Carrito.aspx?id=<% = item.Id %>"class="btn btn-secondary">Agregar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
