@@ -38,7 +38,7 @@
                             <td>
                                 <img src="<%#Eval("ItemArt.ImagenUrl")%>"alt="..." style="height: 8rem; width: 8rem;">
                             </td>
-                            <td><a href="DetalleArticulo.aspx?codigo=<%#Eval("ItemArt.Codigo")%>"class="btn btn-info btn-sm">Info Articulo</a>
+                            <td><a href="DetalleArticulo.aspx?id=<%#Eval("ItemArt.Id")%>"class="btn btn-info btn-sm">Info Articulo</a>
                                
                             </td>
                            <td><a href="Carrito.aspx?id=<%#Eval("ItemArt.Id")%>&c=d" class="btn btn-danger btn-sm">Eliminar</a>
